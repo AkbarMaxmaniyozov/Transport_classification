@@ -1,7 +1,6 @@
 import streamlit as st
 from fastai.vision.all import *
 import pathlib
-import platform
 plt = platform.system()
 if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 import plotly.express as px
