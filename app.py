@@ -23,7 +23,6 @@ if file:
     pred, pred_id, probs = model.predict(img)
     st.success(pred)
     st.info(f"Ehtimollik: {probs[pred_id]:.1%}")
-
     #plotting
     fig = px.bar(x=probs*100, 
                  y=model.dls.vocab,
